@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.font-cutive{
+  font-family: "Cutive", serif;
+}
+
+.font-sedan{
+  font-family: "Sedan SC", serif;
+}
+
+.font-title{
+    font-family: "Jacquard 24", system-ui;
+}
+
+.carousel-container {
+    width: 95vw;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .active {
+    flex: 0 0 100%;
+  }
+  
+  /* Optional styles for animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+.movieContent{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gradient-background{
+  background-image: linear-gradient(
+  45deg,
+  hsl(224deg 96% 20%) 0%,
+  hsl(222deg 92% 21%) 9%,
+  hsl(221deg 90% 22%) 18%,
+  hsl(220deg 88% 23%) 27%,
+  hsl(218deg 87% 23%) 36%,
+  hsl(217deg 86% 24%) 45%,
+  hsl(220deg 69% 26%) 55%,
+  hsl(223deg 52% 27%) 64%,
+  hsl(225deg 40% 27%) 73%,
+  hsl(226deg 28% 27%) 82%,
+  hsl(227deg 17% 26%) 91%,
+  hsl(228deg 4% 25%) 100%
+);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #0000;
+  border-right-color: #ffa50097;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+.loader:after {
+  animation-duration: 4s;
+}
+@keyframes l24 {
+  100% {transform: rotate(1turn)}
+}
+
+
+
+
